@@ -22,7 +22,6 @@ mongoose.connect(uri, options).then(
 );
 
 const app = express();
-/* const PORT = process.env.PORT || 3000; */
 
 // Middleware
 app.use(morgan("tiny"));
@@ -32,9 +31,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Rutas
-app.get("/", (req, res) => {
-  res.send("Hello World");
-});
 
 app.use(require("./routes/nota"));
 

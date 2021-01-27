@@ -6,8 +6,14 @@ const notaSchema = new Schema({
     type: String,
     required: [true, "Nombre obligatorio"],
   },
-  description: String,
-  usuarioId: String,
+  nota: {
+    type: Number,
+    required: true,
+  },
+  descripcion: {
+    type: String,
+    required: true,
+  },
   date: {
     type: Date,
     default: Date.now,
