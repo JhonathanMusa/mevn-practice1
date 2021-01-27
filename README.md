@@ -1,2 +1,2 @@
-# mevn-practice1
+# mevn-practice1-backend
 Practice project MEVN
